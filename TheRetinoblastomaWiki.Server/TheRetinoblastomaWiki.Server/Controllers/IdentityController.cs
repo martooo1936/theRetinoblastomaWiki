@@ -13,7 +13,7 @@ namespace TheRetinoblastomaWiki.Server.Controllers
     using System;
     using System.Text;
 
-    public abstract class IdentityController : ApiController
+    public  class IdentityController : ApiController
     {
 
         private readonly UserManager<User> userManager;
@@ -25,6 +25,8 @@ namespace TheRetinoblastomaWiki.Server.Controllers
         this.userManager = userManager;
         this.appSettings = appSettings.Value;
         }
+
+        [Route(nameof(Register))]
         // creating the register functionality
         public async Task<ActionResult> Register(RegisterRequestModel model)
         {
@@ -45,6 +47,8 @@ namespace TheRetinoblastomaWiki.Server.Controllers
             return BadRequest(result.Errors);
         }
 
+
+        [Route(nameof(Login))]
         // creating the login functionality
 
         public async Task<ActionResult<string>> Login(LoginRequestModel model) 

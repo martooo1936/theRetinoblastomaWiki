@@ -6,7 +6,7 @@ namespace TheRetinoblastomaWiki.Server.Controllers
     // base abstract class for API controllers
     [ApiController]
     [Route("[controller]")]
-    public class ApiController : ControllerBase
+    public abstract class ApiController : ControllerBase
     {
 
     }

@@ -1,11 +1,16 @@
 ﻿
-using Microsoft.AspNetCore.Mvc;
+
 
 namespace TheRetinoblastomaWiki.Server.Controllers
 {
-  
-    public class IdentityController : ApiController
-    {
+    using Microsoft.AspNetCore.Mvc;
+    using System.Threading.Tasks;
 
+    public abstract class IdentityController : ApiController
+    {
+        public async Task<IActionResult> Register()
+        {
+
+        }
     }
 }

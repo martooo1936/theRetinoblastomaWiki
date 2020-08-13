@@ -13,6 +13,7 @@ namespace TheRetinoblastomaWiki.Server
     using Microsoft.IdentityModel.Tokens;
     using Microsoft.AspNetCore.Authentication.JwtBearer;
     using System.Text;
+    using TheRetinoblastomaWiki.Server.Infrastructure;
 
     public class Startup
     {
@@ -68,9 +69,11 @@ namespace TheRetinoblastomaWiki.Server
         {
             if (env.IsDevelopment())
             {
-                app.UseDatabaseErrorPage();
-            }
 
+                app.UseDeveloperExceptionPage();
+            }
+            
+            
             app.UseRouting();
 
             app.UseCors(options => options
@@ -86,6 +89,8 @@ namespace TheRetinoblastomaWiki.Server
             {
                 endpoints.MapControllers();
             });
+
+            app.ApplyMigrations();
         }
     }
 }

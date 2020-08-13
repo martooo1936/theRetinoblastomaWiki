@@ -19,7 +19,7 @@ namespace TheRetinoblastomaWiki.Server.Controllers
         private readonly UserManager<User> userManager;
         private readonly AppSettings appSettings;
 
-        protected IdentityController(UserManager<User> userManager,
+        public IdentityController(UserManager<User> userManager,
             IOptions<AppSettings> appSettings)
         { 
         this.userManager = userManager;

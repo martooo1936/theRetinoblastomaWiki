@@ -4,9 +4,7 @@ namespace TheRetinoblastomaWiki.Server.Controllers
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     
-    [ApiController]
-    [Route("[controller]")]
-    public class HomeController : ControllerBase
+    public class HomeController : ApiController
     {
         // validate if the auth is working correctly
        // [Authorize]

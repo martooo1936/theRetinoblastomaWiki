@@ -6,7 +6,9 @@ namespace TheRetinoblastomaWiki.Server.Data
 
     using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
     using Microsoft.EntityFrameworkCore;
-    public class TheRetinoblastomaWikiDbContext : IdentityDbContext
+    using TheRetinoblastomaWiki.Server.Data.Models;
+
+    public class TheRetinoblastomaWikiDbContext : IdentityDbContext<User>
     {
         public TheRetinoblastomaWikiDbContext(DbContextOptions<TheRetinoblastomaWikiDbContext> options)
             : base(options)

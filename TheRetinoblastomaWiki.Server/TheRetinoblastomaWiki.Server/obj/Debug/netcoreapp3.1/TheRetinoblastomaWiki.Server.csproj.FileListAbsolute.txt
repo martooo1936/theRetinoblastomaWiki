@@ -1,8 +1,6 @@
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.csprojAssemblyReference.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.AssemblyInfoInputs.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.AssemblyInfo.cs
-C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.csproj.CoreCompileInputs.cache
-C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\Properties\launchSettings.json

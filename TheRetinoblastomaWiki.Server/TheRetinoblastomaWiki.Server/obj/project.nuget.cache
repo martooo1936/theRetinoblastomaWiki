@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "8HXSY08v8zuOe4t4fZ7Tg27ZjCmZ04QM+QeTTrGVA/Li/oqCTqRKBhTAeQrRijXTyaPcbuHZokb2AgKSuqBtUg==",
+  "dgSpecHash": "cla1BYphucrC6sQ02VQG9a9mY2XMUcuBDb8kCTmJZSNMnNMIoJIn4ehG+CX+U62oTBTz8fdnLY8jvyDdXHFn4w==",
   "success": true,
   "projectFilePath": "C:\\Users\\nonam\\Desktop\\The Retinoblastoma Wiki\\TheRetinoblastomaWiki.Server\\TheRetinoblastomaWiki.Server\\TheRetinoblastomaWiki.Server.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\nonam\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\3.1.7\\microsoft.aspnetcore.authentication.jwtbearer.3.1.7.nupkg.sha512",
     "C:\\Users\\nonam\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\3.1.7\\microsoft.aspnetcore.cryptography.internal.3.1.7.nupkg.sha512",
     "C:\\Users\\nonam\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\3.1.7\\microsoft.aspnetcore.cryptography.keyderivation.3.1.7.nupkg.sha512",
     "C:\\Users\\nonam\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\3.1.7\\microsoft.aspnetcore.diagnostics.entityframeworkcore.3.1.7.nupkg.sha512",

@@ -1,11 +1,20 @@
 ﻿
 namespace TheRetinoblastomaWiki.Server.Controllers
 {
-    using System.Diagnostics;
+    using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    using Microsoft.Extensions.Logging;
-    public class HomeController : Controller
+    
+    [ApiController]
+    [Route("[controller]")]
+    public class HomeController : ControllerBase
     {
+        // validate if the auth is working correctly
+       // [Authorize]
+        public IActionResult Get()
+        {
+            // test action result
+            return Ok("Works");
+        }
    
     }
 }

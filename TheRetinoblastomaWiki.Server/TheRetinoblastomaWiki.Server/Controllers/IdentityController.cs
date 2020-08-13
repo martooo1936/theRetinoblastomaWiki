@@ -11,6 +11,8 @@ namespace TheRetinoblastomaWiki.Server.Controllers
     {
 
         private readonly UserManager<User> userManager;
+
+        // creating the register functionality
         public async Task<IActionResult> Register(RegisterUserRequestModel model)
         {
             var user = new User
@@ -29,5 +31,9 @@ namespace TheRetinoblastomaWiki.Server.Controllers
 
             return BadRequest(result.Errors);
         }
+
+        // creating the login functionality
+
+        public async Task<IActionResult> Login()
     }
 }

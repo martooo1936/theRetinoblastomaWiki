@@ -2,7 +2,7 @@
 namespace TheRetinoblastomaWiki.Server.Models.Identity
 {
     using System.ComponentModel.DataAnnotations;
-    public class RegisterUserRequestModel
+    public class RegisterRequestModel
     {
         [Required]
         public string UserName { get; set; }

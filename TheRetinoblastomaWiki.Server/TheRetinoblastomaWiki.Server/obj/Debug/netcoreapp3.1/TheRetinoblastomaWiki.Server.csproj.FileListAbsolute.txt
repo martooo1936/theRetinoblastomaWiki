@@ -65,3 +65,6 @@ C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheR
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.dll
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.pdb
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.genruntimeconfig.cache
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.csproj.CoreCompileInputs.cache
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.MvcApplicationPartsAssemblyInfo.cache

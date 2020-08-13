@@ -27,13 +27,20 @@ namespace TheRetinoblastomaWiki.Server
                 .UseSqlServer(this.Configuration.GetConnectionString("DefaultConnection")));
 
             services
-                .AddIdentity<User, IdentityRole>()
+                .AddIdentity<User, IdentityRole>(options => {
+
+                    options.Password.RequireDigit = false;
+                    options.Password.RequireLowercase = false;
+                    options.Password.RequireNonAlphanumeric = false;
+                    options.Password.RequireUppercase = false;
+                    options.Password.RequiredLength = 6;
+                })
                 .AddEntityFrameworkStores<TheRetinoblastomaWikiDbContext>();
 
             var appSettingsConfiguration = this.Configuration.GetSection("ApplicationSettings");
-            services.Configure<ApplicationSettings>(appSettingsConfiguration);
+            services.Configure<AppSettings>(appSettingsConfiguration);
 
-            var appSettings = appSettingsConfiguration.Get<ApplicationSettings>();
+            var appSettings = appSettingsConfiguration.Get<AppSettings>();
             var key = Encoding.ASCII.GetBytes(appSettings.Secret);
 
             services.AddAuthentication(x =>

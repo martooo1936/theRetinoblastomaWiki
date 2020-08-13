@@ -26,7 +26,7 @@ namespace TheRetinoblastomaWiki.Server.Controllers
         this.appSettings = appSettings.Value;
         }
         // creating the register functionality
-        public async Task<IActionResult> Register(RegisterRequestModel model)
+        public async Task<ActionResult> Register(RegisterRequestModel model)
         {
             var user = new User
             {

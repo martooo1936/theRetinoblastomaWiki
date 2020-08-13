@@ -8,7 +8,7 @@ namespace TheRetinoblastomaWiki.Server.Controllers
     {
         // validate if the auth is working correctly
        // [Authorize]
-        public IActionResult Get()
+        public ActionResult Get()
         {
             // test action result
             return Ok("Works");

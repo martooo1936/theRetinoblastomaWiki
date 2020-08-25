@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    console.log('clicked');
+    console.log(this.loginForm.value);
 
   }
 

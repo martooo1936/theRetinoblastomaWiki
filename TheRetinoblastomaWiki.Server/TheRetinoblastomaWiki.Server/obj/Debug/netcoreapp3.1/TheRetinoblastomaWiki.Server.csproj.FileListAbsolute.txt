@@ -68,3 +68,6 @@ C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheR
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.csproj.CoreCompileInputs.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Debug\netcoreapp3.1\TheRetinoblastomaWiki.Server.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\Properties\serviceDependencies.TheRetinoblastomaWikiServer - Web Deploy.json
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\TheRetinoblastomaWikiServer - Web Deploy\mssql1.arm.json
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\TheRetinoblastomaWikiServer - Web Deploy\profile.arm.json

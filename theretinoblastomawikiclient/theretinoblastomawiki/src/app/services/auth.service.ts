@@ -10,8 +10,8 @@ import { environment } from '../../environments/environment';
 export class AuthService {
 
   //path to BE 
-  private loginPath = environment.apiUrl + 'login'
-  private registerPath = environment.apiUrl + 'register'
+  private loginPath = environment.apiUrl + 'Identity/login'
+  private registerPath = environment.apiUrl + 'Identity/register'
   // injected in the constructor, the service will be used by dependency injection
   constructor(private http: HttpClient) { }
 

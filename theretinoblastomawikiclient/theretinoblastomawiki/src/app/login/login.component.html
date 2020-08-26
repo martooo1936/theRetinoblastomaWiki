@@ -7,11 +7,18 @@
                   <label for="exampleInputEmail1">Username</label>
                   <input type="text" class="form-control" formControlName ="username">
                 </div>
+
+                <div *ngIf="username.touched && username.errors?.required" class="aler alert-danger">
+                      This fields is requiderd! 
+                </div>
                 <div class="form-group">
                   <label for="exampleInputPassword1">Password</label>
                   <input type="password" class="form-control" formControlName ="password">
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <div *ngIf="password.touched && password.errors?.required" class="aler alert-danger">
+                  This fields is requiderd! 
+            </div>
+                <button type="submit" class="btn btn-primary">Login</button>
               </form>
         </div>
         <div class="col-lg-4"></div>

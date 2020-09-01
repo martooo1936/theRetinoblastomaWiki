@@ -14,5 +14,17 @@ namespace TheRetinoblastomaWiki.Server.Data
             : base(options)
         {
         }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder
+                .Entity<Patient>()
+                .HasOne(p => p.User)
+                .WithMany(u => u.Patients)
+                .HasForeignKey(p => p.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+            
+            base.OnModelCreating(builder);
+        }
     }
 }

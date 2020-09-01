@@ -20,23 +20,22 @@ export class LoginComponent implements OnInit {
     })
    }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
-  login(){
-  this.authService.login(this.loginForm.value).subscribe(data => {
-    console.log(data)
-  })
-
+  // subscribe to the Observable
+  login() {
+    this.authService.login(this.loginForm.value).subscribe(data => {
+      this.authService.saveToken(data['token']);
+     
+    })
   }
-
   get username(){
-    console.log(this.loginForm.get('username'));
-    return this.loginForm.get('username');
+    return this.loginForm.get('username')
   }
 
   get password(){
-    return this.loginForm.get('password');
+    return this.loginForm.get('password')
   }
 
 }

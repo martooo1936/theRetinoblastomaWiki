@@ -398,3 +398,4 @@ C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheR
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\win-x86\TheRetinoblastomaWiki.Server.dll
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\win-x86\TheRetinoblastomaWiki.Server.pdb
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\win-x86\TheRetinoblastomaWiki.Server.genruntimeconfig.cache
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\win-x86\TheRetinoblastomaWiki.Server.csprojAssemblyReference.cache

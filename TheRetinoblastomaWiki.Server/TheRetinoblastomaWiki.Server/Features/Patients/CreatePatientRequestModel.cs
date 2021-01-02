@@ -5,11 +5,13 @@ namespace TheRetinoblastomaWiki.Server.Features.Patients
 {
     public class CreatePatientRequestModel
     {
+        [Required]
+        public string ImageUrl { get; set; }
+        
         [MaxLength(MaxDescriptionLength)]
         public string Description { get; set; }
 
-        [Required]
-        public string ImageUrl { get; set; }
+       
 
         
     }

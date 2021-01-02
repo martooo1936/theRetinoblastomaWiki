@@ -1,12 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
-using TheRetinoblastomaWiki.Server.Models.Patients;
 using TheRetinoblastomaWiki.Server.Infrastructure;
-using TheRetinoblastomaWiki.Server.Data.Models;
-using TheRetinoblastomaWiki.Server.Data;
+
 
 namespace TheRetinoblastomaWiki.Server.Features.Patients
 {
@@ -14,12 +10,10 @@ namespace TheRetinoblastomaWiki.Server.Features.Patients
     {
         // inject the DB context
 
-        private readonly TheRetinoblastomaWikiDbContext data;
+        private readonly IPatientService patientService;
         
-        public PatientsController (TheRetinoblastomaWikiDbContext data) 
-        {
-            this.data = data;
-        }
+        public PatientsController (IPatientService patientService) => this.patientService = patientService;
+        
         // returns the id of the created patient
         [Authorize]
         [HttpPost]
@@ -27,8 +21,9 @@ namespace TheRetinoblastomaWiki.Server.Features.Patients
         {
             // get the id of the user
             var userId = this.User.GetId();
-           
 
+            #region refactored
+            /*
             var patient = new Patient 
             { 
                 Description = model.Description,
@@ -39,8 +34,14 @@ namespace TheRetinoblastomaWiki.Server.Features.Patients
             this.data.Add(patient);
 
             await this.data.SaveChangesAsync();
+            */
+            #endregion refactored
 
-            return Created(nameof(this.Create), patient.Id);
+            var id = await this.patientService.Create(
+                model.ImageUrl, 
+                model.Description, 
+                userId);
+            return Created(nameof(this.Create), id);
         }
     }
 }

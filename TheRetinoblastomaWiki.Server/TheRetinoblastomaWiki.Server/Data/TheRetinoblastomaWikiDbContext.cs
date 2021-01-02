@@ -15,6 +15,8 @@ namespace TheRetinoblastomaWiki.Server.Data
         {
         }
 
+        public DbSet<Patient> Patients { get; set; }
+
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder

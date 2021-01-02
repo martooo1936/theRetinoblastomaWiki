@@ -14,7 +14,7 @@ namespace TheRetinoblastomaWiki.Server.Data.Models
         [Required]
         public string ImageUrl { get; set; }
 
-        // a patient can be added only by registered users
+        // a patient can be added only by registered users / doctor 
         [Required]
         public string UserId { get; set; }
 

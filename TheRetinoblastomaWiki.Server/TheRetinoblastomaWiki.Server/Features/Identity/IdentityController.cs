@@ -4,7 +4,6 @@ namespace TheRetinoblastomaWiki.Server.Features.Identity
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using System.Threading.Tasks;
-    using TheRetinoblastomaWiki.Server.Models.Identity;
     using Data.Models;
     using Microsoft.Extensions.Options;
 
@@ -50,7 +49,7 @@ namespace TheRetinoblastomaWiki.Server.Features.Identity
         [Route(nameof(Login))]
         // creating the login functionality
 
-        public async Task<ActionResult<object>> Login(LoginRequestModel model) 
+        public async Task<ActionResult<LoginResponseModel>> Login(LoginRequestModel model) 
         {
             // validation if user is logged in successfully
 
@@ -93,7 +92,7 @@ namespace TheRetinoblastomaWiki.Server.Features.Identity
                 user.UserName,
                 this.appSettings.Secret);
 
-            return new
+            return new LoginResponseModel
             {
                 Token = token
             };

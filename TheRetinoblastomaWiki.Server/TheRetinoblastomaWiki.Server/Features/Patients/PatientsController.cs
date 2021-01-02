@@ -8,7 +8,7 @@ using TheRetinoblastomaWiki.Server.Infrastructure;
 using TheRetinoblastomaWiki.Server.Data.Models;
 using TheRetinoblastomaWiki.Server.Data;
 
-namespace TheRetinoblastomaWiki.Server.Features
+namespace TheRetinoblastomaWiki.Server.Features.Patients
 {
     public class PatientsController : ApiController
     {

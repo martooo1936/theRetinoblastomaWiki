@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using static TheRetinoblastomaWiki.Server.Data.Validation.Patient;
 
-namespace TheRetinoblastomaWiki.Server.Models.Patients
+namespace TheRetinoblastomaWiki.Server.Features.Patients
 {
     public class CreatePatientRequestModel
     {

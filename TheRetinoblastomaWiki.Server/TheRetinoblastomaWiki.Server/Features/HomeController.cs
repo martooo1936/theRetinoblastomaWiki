@@ -1,5 +1,5 @@
 ﻿
-namespace TheRetinoblastomaWiki.Server.Controllers
+namespace TheRetinoblastomaWiki.Server.Features
 {
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;

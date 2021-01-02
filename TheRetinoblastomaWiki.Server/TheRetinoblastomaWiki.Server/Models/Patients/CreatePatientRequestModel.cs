@@ -5,7 +5,6 @@ namespace TheRetinoblastomaWiki.Server.Models.Patients
 {
     public class CreatePatientRequestModel
     {
-        [Required]
         [MaxLength(MaxDescriptionLength)]
         public string Description { get; set; }
 

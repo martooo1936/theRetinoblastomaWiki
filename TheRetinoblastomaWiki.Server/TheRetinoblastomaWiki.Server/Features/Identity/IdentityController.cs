@@ -1,25 +1,24 @@
 ﻿
-namespace TheRetinoblastomaWiki.Server.Controllers
+namespace TheRetinoblastomaWiki.Server.Features.Identity
 {
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
     using System.Threading.Tasks;
     using TheRetinoblastomaWiki.Server.Models.Identity;
     using Data.Models;
-    using System.Security.Claims;
-    using Microsoft.IdentityModel.Tokens;
     using Microsoft.Extensions.Options;
-    using System.IdentityModel.Tokens.Jwt;
-    using System;
-    using System.Text;
 
     public  class IdentityController : ApiController
     {
 
         private readonly UserManager<User> userManager;
+        private readonly IIdentityService identityService;
         private readonly AppSettings appSettings;
 
-        public IdentityController(UserManager<User> userManager,
+
+        public IdentityController(
+            UserManager<User> userManager,
+            IIdentityService identityService,
             IOptions<AppSettings> appSettings)
         { 
         this.userManager = userManager;
@@ -67,8 +66,12 @@ namespace TheRetinoblastomaWiki.Server.Controllers
             {
                 return Unauthorized();
             }
-            //the logic behind creating the JWT Token
 
+            #region refactored
+
+            // moved to the service layer
+            //the logic behind creating the JWT Token
+            /*
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(this.appSettings.Secret);
             var tokenDescriptor = new SecurityTokenDescriptor
@@ -83,11 +86,16 @@ namespace TheRetinoblastomaWiki.Server.Controllers
             };
 
             var token = tokenHandler.CreateToken(tokenDescriptor);
-            var encryptedToken = tokenHandler.WriteToken(token);
+            */
+            #endregion refactored
+            var token = this.identityService.GenerateJwtToken(
+                user.Id,
+                user.UserName,
+                this.appSettings.Secret);
 
             return new
             {
-                Token = encryptedToken
+                Token = token
             };
         }
     }

@@ -1,29 +1,31 @@
 ﻿
 namespace TheRetinoblastomaWiki.Server.Features.Identity
 {
+    using Data.Models;
     using Microsoft.AspNetCore.Identity;
     using Microsoft.AspNetCore.Mvc;
-    using System.Threading.Tasks;
-    using Data.Models;
     using Microsoft.Extensions.Options;
+    using System.Threading.Tasks;
 
     public  class IdentityController : ApiController
     {
 
         private readonly UserManager<User> userManager;
-        private readonly IIdentityService identityService;
+        private readonly IIdentityService identity;
         private readonly AppSettings appSettings;
 
 
         public IdentityController(
             UserManager<User> userManager,
-            IIdentityService identityService,
+            IIdentityService identity,
             IOptions<AppSettings> appSettings)
         { 
         this.userManager = userManager;
+        this.identity = identity;
         this.appSettings = appSettings.Value;
         }
 
+        [HttpPost]
         [Route(nameof(Register))]
         // creating the register functionality
         public async Task<ActionResult> Register(RegisterRequestModel model)
@@ -45,7 +47,7 @@ namespace TheRetinoblastomaWiki.Server.Features.Identity
             return BadRequest(result.Errors);
         }
 
-
+        [HttpPost]
         [Route(nameof(Login))]
         // creating the login functionality
 
@@ -87,7 +89,7 @@ namespace TheRetinoblastomaWiki.Server.Features.Identity
             var token = tokenHandler.CreateToken(tokenDescriptor);
             */
             #endregion refactored
-            var token = this.identityService.GenerateJwtToken(
+            var token = this.identity.GenerateJwtToken(
                 user.Id,
                 user.UserName,
                 this.appSettings.Secret);

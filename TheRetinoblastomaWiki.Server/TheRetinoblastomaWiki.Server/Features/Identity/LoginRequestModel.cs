@@ -1,5 +1,5 @@
 ﻿
-namespace TheRetinoblastomaWiki.Server.Models.Identity
+namespace TheRetinoblastomaWiki.Server.Features.Identity
 {
     using System.ComponentModel.DataAnnotations;
     public class LoginRequestModel

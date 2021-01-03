@@ -18,10 +18,11 @@ namespace TheRetinoblastomaWiki.Server
 
         public void ConfigureServices(IServiceCollection services)
         => services
-                .AddDbContext<TheRetinoblastomaWikiDbContext>(options => options
-                .UseSqlServer(this.Configuration.GetDefaultConnectionString()))
+                .AddDatabase(this.Configuration)
                 .AddIdentity()
                 .AddJwtAuthentication(services.GetApplicationSettings(this.Configuration))
+                .AddApplicationServices()
+                .AddSwagger()
                 .AddControllers();
 
             #region refactoring 
@@ -80,8 +81,9 @@ namespace TheRetinoblastomaWiki.Server
                 app.UseDeveloperExceptionPage();
             }
             
-            
-            app.UseRouting()
+            app
+               .UseSwaggerUI()
+               .UseRouting()
                .UseCors(options => options
                 .AllowAnyOrigin()
                 .AllowAnyMethod()

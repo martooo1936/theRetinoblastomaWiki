@@ -62,8 +62,6 @@ C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheR
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.csprojAssemblyReference.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.AssemblyInfoInputs.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.AssemblyInfo.cs
-C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.csproj.CoreCompileInputs.cache
-C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.RazorTargetAssemblyInfo.cache
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.csproj.CopyComplete
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\staticwebassets\TheRetinoblastomaWiki.Server.StaticWebAssets.Manifest.cache
@@ -71,3 +69,10 @@ C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheR
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.dll
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.pdb
 C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.genruntimeconfig.cache
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Release\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\bin\Release\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.csproj.CoreCompileInputs.cache
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\nonam\Desktop\The Retinoblastoma Wiki\TheRetinoblastomaWiki.Server\TheRetinoblastomaWiki.Server\obj\Release\netcoreapp3.1\TheRetinoblastomaWiki.Server.MvcApplicationPartsAssemblyInfo.cache

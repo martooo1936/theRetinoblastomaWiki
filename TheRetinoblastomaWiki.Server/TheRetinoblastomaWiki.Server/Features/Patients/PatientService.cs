@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TheRetinoblastomaWiki.Server.Data;
 using TheRetinoblastomaWiki.Server.Data.Models;
@@ -26,5 +29,17 @@ namespace TheRetinoblastomaWiki.Server.Features.Patients
 
             return patient.Id;
         }
+
+        public async Task<IEnumerable<PatientListingResponseModel>> ByUser(string userId)
+            => await this.data
+            .Patients
+            .Where(p => p.UserId == userId)
+            .Select(p => new PatientListingResponseModel
+            {
+                Id = p.Id,
+                ImageUrl = p.ImageUrl
+            })
+            .ToListAsync();
+       
     }
 }

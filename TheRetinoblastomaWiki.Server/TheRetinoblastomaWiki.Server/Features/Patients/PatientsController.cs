@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using TheRetinoblastomaWiki.Server.Infrastructure;
 
@@ -14,6 +15,18 @@ namespace TheRetinoblastomaWiki.Server.Features.Patients
         
         public PatientsController (IPatientService patientService) => this.patientService = patientService;
         
+        [Authorize]
+        [HttpGet]
+        // return all patients which are treated in the hospital
+        public async Task<IEnumerable<PatientListingResponseModel>> Mine()
+        {
+            var userId = this.User.GetId();
+
+            return await this.patientService.ByUser(userId);
+
+        }
+
+
         // returns the id of the created patient
         [Authorize]
         [HttpPost]

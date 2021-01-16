@@ -8,7 +8,8 @@ namespace TheRetinoblastomaWiki.Server
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
-    using TheRetinoblastomaWiki.Server.Infrastructure;
+    using TheRetinoblastomaWiki.Server.Infrastructure.Extensions;
+    using TheRetinoblastomaWiki.Server.Infrastructure.Filters;
 
     public class Startup
     {
@@ -23,7 +24,7 @@ namespace TheRetinoblastomaWiki.Server
                 .AddJwtAuthentication(services.GetApplicationSettings(this.Configuration))
                 .AddApplicationServices()
                 .AddSwagger()
-                .AddControllers();
+                .AddApiControllers();
 
             #region refactoring 
             /*

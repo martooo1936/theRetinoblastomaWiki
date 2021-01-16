@@ -1,4 +1,4 @@
-﻿namespace TheRetinoblastomaWiki.Server.Features.Identity
+﻿namespace TheRetinoblastomaWiki.Server.Features.Identity.Models
 {
     public class LoginResponseModel
     {

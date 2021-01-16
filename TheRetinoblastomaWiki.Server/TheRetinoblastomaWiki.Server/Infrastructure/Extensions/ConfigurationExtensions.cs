@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace TheRetinoblastomaWiki.Server.Infrastructure
+namespace TheRetinoblastomaWiki.Server.Infrastructure.Extensions
 {
     public static class ConfigurationExtensions
     {

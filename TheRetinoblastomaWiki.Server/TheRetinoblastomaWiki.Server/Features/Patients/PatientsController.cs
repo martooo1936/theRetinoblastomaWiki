@@ -2,8 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using TheRetinoblastomaWiki.Server.Infrastructure;
-
+using TheRetinoblastomaWiki.Server.Features.Patients.Models;
+using TheRetinoblastomaWiki.Server.Infrastructure.Extensions;
 
 namespace TheRetinoblastomaWiki.Server.Features.Patients
 {
@@ -18,13 +18,20 @@ namespace TheRetinoblastomaWiki.Server.Features.Patients
         [Authorize]
         [HttpGet]
         // return all patients which are treated in the hospital
-        public async Task<IEnumerable<PatientListingResponseModel>> Mine()
+        public async Task<IEnumerable<PatientListingServiceModel>> Mine()
         {
             var userId = this.User.GetId();
 
             return await this.patientService.ByUser(userId);
 
         }
+
+        [Authorize]
+        [HttpGet]
+        [Route("{id}")]
+        public async Task <ActionResult<PatientDetailsServiceModel>> Details(int id)
+             => await this.patientService.Details(id);
+     
 
 
         // returns the id of the created patient

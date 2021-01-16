@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Security.Claims;
 
-namespace TheRetinoblastomaWiki.Server.Infrastructure
+namespace TheRetinoblastomaWiki.Server.Infrastructure.Extensions
 {
     public static class IdentityExtensions
     {

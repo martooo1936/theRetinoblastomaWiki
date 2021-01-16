@@ -10,8 +10,9 @@ using TheRetinoblastomaWiki.Server.Data;
 using TheRetinoblastomaWiki.Server.Data.Models;
 using TheRetinoblastomaWiki.Server.Features.Identity;
 using TheRetinoblastomaWiki.Server.Features.Patients;
+using TheRetinoblastomaWiki.Server.Infrastructure.Filters;
 
-namespace TheRetinoblastomaWiki.Server.Infrastructure
+namespace TheRetinoblastomaWiki.Server.Infrastructure.Extensions
 {
     public static class ServiceCollectionExtensions
     {
@@ -92,6 +93,12 @@ namespace TheRetinoblastomaWiki.Server.Infrastructure
                         });
                 });
             
-        
+
+        public static void AddApiControllers(this IServiceCollection services)
+            => services
+            .AddControllers(options => options
+            .Filters
+            .Add<ModelOrNotFoundActionFilter>());
+
     }
 }

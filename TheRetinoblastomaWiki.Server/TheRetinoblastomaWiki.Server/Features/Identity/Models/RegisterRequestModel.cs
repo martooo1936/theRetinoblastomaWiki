@@ -1,5 +1,5 @@
 ﻿
-namespace TheRetinoblastomaWiki.Server.Features.Identity
+namespace TheRetinoblastomaWiki.Server.Features.Identity.Models
 {
     using System.ComponentModel.DataAnnotations;
     public class RegisterRequestModel

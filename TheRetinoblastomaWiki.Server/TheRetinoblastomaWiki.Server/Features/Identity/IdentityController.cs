@@ -6,6 +6,7 @@ namespace TheRetinoblastomaWiki.Server.Features.Identity
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Options;
     using System.Threading.Tasks;
+    using TheRetinoblastomaWiki.Server.Features.Identity.Models;
 
     public  class IdentityController : ApiController
     {

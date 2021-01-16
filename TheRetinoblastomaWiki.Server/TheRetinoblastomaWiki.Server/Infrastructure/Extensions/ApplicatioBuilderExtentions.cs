@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using TheRetinoblastomaWiki.Server.Data;
 
-namespace TheRetinoblastomaWiki.Server.Infrastructure
+namespace TheRetinoblastomaWiki.Server.Infrastructure.Extensions
 {
     public static class ApplicatioBuilderExtentions
     {
